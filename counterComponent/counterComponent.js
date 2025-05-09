@@ -47,7 +47,7 @@ class CounterRoot extends HTMLElement {
   }
 }
 
-customElements.define("counter-root", CounterRoot);
+customElements.define("counter-component", CounterRoot);
 
 class CountTotal extends HTMLElement {
   static observedAttributes = ["count"];
