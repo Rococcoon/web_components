@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Component Demo</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="component-container">
+        <h1>Hello, Theme Toggle!</h1>
+        <p>
+          Click the icon in the top-right to toggle between light and dark
+          themes.
+        </p>
+        <toggle-theme></toggle-theme>
+        <script type="module" src="/toggleTheme/toggleTheme.js"></script>
+      </div>
+
+      <div class="component-container">
+        <h1>Hello, Hamburger Menu!</h1>
+        <p>
+          This hamburger menu is desgined for htmx. It uses the ligth dom only,
+          I found this easier, as I was fighting the shadow dom to get htmx in.
+          The component takes a string of json and parses it, to dynamically
+          build the links.
+        </p>
+        <hamburger-menu></hamburger-menu>
+        <script type="module" src="/hamburgerMenu/hamburgerMenu.js"></script>
+      </div>
+
+      <div class="component-container">
+        <h1>Hello, Hex spinner!</h1>
+        <p>
+          A hex spinner converted to a web component, converted to a Web
+          componenet. from uiverse.io
+        </p>
+        <hex-spinner></hex-spinner>
+        <script type="module" src="/hexSpinner/hexSpinner.js"></script>
+      </div>
+
+      <div class="component-container">
+        <h1>Hello, Theme Aware Icon!</h1>
+        <p>
+          A theme aware icon. Can be used for images or icons. Stores them in
+          the cache. Will not work on github pages.... oops. Using fetch doesn't
+          work... but the code is niceish.
+        </p>
+        <icon-theme-aware
+          data-name="git-hub"
+          data-src-light="/icons/github/github-mark-dark.png"
+          data-src-dark="/icons/github/github-mark-light.png"
+          data-height="20"
+          data-width="20"
+        ></icon-theme-aware>
+        <script type="module" src="/iconThemeAware/iconThemeAware.js"></script>
+      </div>
+    </main>
+  </body>
+</html>

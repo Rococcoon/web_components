@@ -1,0 +1,47 @@
+/* styles.css */
+
+:root {
+  --bg-light: #ffffff;
+  --text-light: #000000;
+
+  --bg-dark: #121212;
+  --text-dark: #f0f0f0;
+}
+
+html[data-theme="light"] {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+html[data-theme="dark"] {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  font-family: sans-serif;
+  min-height: 100vh;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.component-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+toggle-theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
